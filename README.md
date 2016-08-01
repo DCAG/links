@@ -5,7 +5,7 @@ IDE:
 JetBrains PhpStorm2016.2 via Student license (https://www.jetbrains.com/phpstorm/)
 
 Sources:
-DB Library - mongo-php-library (https://github.com/mongodb/mongo-php-library) 
+DB Library - mongo-php-library (https://github.com/mongodb/mongo-php-library)
 DB Driver - Mongo-php-driver (https://github.com/mongodb/mongo-php-driver)
 Model + Controller - SlimFramework 3 (http://www.slimframework.com)
 Skeleton for SlimFramework (https://github.com/slimphp/Slim-Skeleton)
