@@ -1,0 +1,19 @@
+{
+    "name": "links/links-project",
+    "description": "Combine and aggregate data from different management systems for easier and better data analysis - focused on servers management",
+    "keywords": ["datacenter","management","server","rest","psr7","slim"],
+    "homepage": "http://github.com/DCAG/links",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Amir Granot",
+            "email": "amirgranotag+links.project@gmail.com",
+            "homepage": "https://granolious.wordpress.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "slim/slim": "^3.1",
+        "monolog/monolog": "^1.17"
+    }
+}
