@@ -11,6 +11,15 @@ namespace links\model;
 
 class resource
 {
+    public $id;
+    /**
+     * @var $displayName
+     */
+    public $displayName;
+    /**
+     * @var $description
+     */
+    public $description;
     /**
      * @var $memberOf
      * contains an array of ids of resourceGroups that this snippet is member of.
@@ -27,4 +36,14 @@ class resource
      * last updated by the provider.
      */
     public $lastUpdated;
+    /**
+     * @var
+     */
+    public $creationTime;
+    /**
+     * @var
+     */
+    public $modifiedBy;
+
+
 }

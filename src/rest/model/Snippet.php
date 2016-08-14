@@ -14,7 +14,7 @@ class Snippet extends resource
     /*
      * Snippet properties:
      */
-    public $id;
+
     /**
      * @var $provider
      * the provider that created this class and is updating it through changes.
@@ -25,10 +25,6 @@ class Snippet extends resource
      * the data property value which the provider references to when updating from its corresponding data source.
      */
     public $referenceId;
-    /**
-     * @var $displayName
-     */
-    public $displayName;
     /**
      * @var $data
      * snippet data collected from the provider.

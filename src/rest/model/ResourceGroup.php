@@ -11,9 +11,19 @@ namespace links\model;
 
 class ResourceGroup
 {
-    var $id;
-    var $members;
-    var $lastUpdated;
-    var $name;
+    public $id;
+    public $name;
+    public $members;
+    public $lastUpdated;
 
+
+    public function __construct()
+    {
+
+    }
+
+    public function __destruct()
+    {
+        // TODO: Implement __destruct() method.
+    }
 }

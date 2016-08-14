@@ -11,8 +11,14 @@ namespace links\controller;
 
 class Nexus
 {
-    var $id;
-    var $lastUpdated;
-    var $connectedLinks;
-    var $memberOf;
+    /**
+     * @var $links
+     * the links to the snippets that created assemble this nexus
+     */
+    public $links; //members
+    /**
+     * @var $createdBy
+     * equivalent to snippets' provider, but with users
+     */
+    public $createdBy; //nexus can be created by user, snippet is always created by a provider
 }
