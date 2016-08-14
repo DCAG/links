@@ -11,5 +11,6 @@ namespace links\controller;
 
 class user
 {
-    $name;
+    var $name;
+    var $password;
 }
