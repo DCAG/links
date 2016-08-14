@@ -11,9 +11,9 @@ namespace links\model;
 
 interface ILinksDAO
 {
-    public $address;
-    public $port;
-    public $db;
-
-    public function getInstance
+    function getInstance();
+    function getUserDAO();
+    function getSnippetDAO();
+    function getNexusDAO();
+    function getResourceGroupDAO();
 }
