@@ -11,11 +11,17 @@ namespace links\model;
 
 class ResourceGroup
 {
+    /*
+     * Properties
+     */
     public $id;
     public $name;
     public $members;
     public $lastUpdated;
 
+    /*
+     * Methods
+     */
 
     public function __construct()
     {
