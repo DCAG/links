@@ -19,10 +19,10 @@ class MongoDBLinksDAO implements ILinksDAO
     public $port;
     public $db;
 
-    public $userDAO;
-    public $snippetDAO;
-    public $nexusDAO;
-    public $resourceGroupDAO;
+    private static $userDAO;
+    private static $snippetDAO;
+    private static $nexusDAO;
+    private static $resourceGroupDAO;
 
     /**
      * Returns the *Singleton* instance of this class.
@@ -31,7 +31,6 @@ class MongoDBLinksDAO implements ILinksDAO
      */
     public static function getInstance()
     {
-
         if (null === static::$instance) {
             //load the address port and dbs from a file or a DIC - but what about the DIC in the rest slim framework???
             static::$instance = new static();
@@ -46,6 +45,16 @@ class MongoDBLinksDAO implements ILinksDAO
      */
     protected function __construct()
     {
+        if(static::$instance != null )
+        {
+            throw new LinksPlatformException("Invalid operation. Instance already exists.");
+        }
+        try{
+            //create session factory
+        }
+        catch(\Exception $ex){
+
+        }
     }
 
     /**
@@ -70,21 +79,25 @@ class MongoDBLinksDAO implements ILinksDAO
 
     function getUserDAO()
     {
-        $this->userDAO = new UserDAO($this);
+        if(!isset($this->userDAO))
+            $this->userDAO = new UserDAO($this);
     }
 
     function getSnippetDAO()
     {
+        if(!isset($this->snippetDAO))
         $this->snippetDAO = new SnippetDAO($this);
     }
 
     function getNexusDAO()
     {
+        if(!isset($this->nexusDAO))
         $this->nexusDAO = new NexusDAO($this);
     }
 
     function getResourceGroupDAO()
     {
+        if(!isset($this->ResourceGroupDAO))
         $this->resourceGroupDAO = new ResourceGroupDAO($this);
     }
 }

@@ -16,7 +16,7 @@ class Snippet extends resource
      */
 
     /**
-     * @var $provider
+     * @var $provider \links\executor\engine\engine
      * the provider that created this class and is updating it through changes.
      */
     public $provider;
@@ -26,20 +26,37 @@ class Snippet extends resource
      */
     public $referenceId;
     /**
-     * @var $data
+     * @var $data object
      * snippet data collected from the provider.
      * represented by one object
      */
     public $data;
     /**
-     * @var $linkedTo
+     * @var $linkedTo \links\model\Nexus
      * contains the id of the nexus object that this snippet is linked to. Left empty if not linked to any nexus.
      */
     public $linkedTo;
+    public $linkedToAtIndex;
+
     /*
      * Snippet functions:
      */
 
+    public function linkToExistingNexus(Nexus $nexus){
+        if(empty($linkedTo) && isset($nexus))
+        {
+            return $nexus->addLink($this);
+        }
+        return null;
+    }
+
+    public function linkToCreateNexus(Snippet $link){
+        if(empty($linkedTo) && isset($link) && empty($link->linkedTo))
+        {
+            return (new Nexus())->addLink($this)->addLink($link);
+        }
+        return null;
+    }
 
 
 }
