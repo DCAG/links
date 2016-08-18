@@ -1,6 +1,14 @@
 # links
 combine and aggregate data from different management systems for easier and maybe better data analysis - focused on servers management
 
+UML diagrams:
+* General Use Case Diagram:    http://creately.com/diagram/example/irynkat31
+* Views and Actions Workflows: http://creately.com/diagram/example/iryu0ksu1
+* Class Diagram:               http://creately.com/diagram/example/is0nnb3m1
+
+Design and Screens:
+* InvisionApp:
+
 IDE:
 * JetBrains PhpStorm2016.2 via Student license (https://www.jetbrains.com/phpstorm/)
 
