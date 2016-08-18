@@ -19,6 +19,8 @@ Sources:
 * Skeleton for SlimFramework (https://github.com/slimphp/Slim-Skeleton)
 * Logging - Monolog (https://github.com/Seldaek/monolog)
 * DIC - Pimple (https://github.com/silexphp/Pimple)
+* Testing - PHPUnit (https://phpunit.de/)
+* **ODM - missing!**
 
 Bibliography:
 * Mongo-PHP-Library API:
