@@ -5,6 +5,7 @@ UML diagrams:
 * General Use Case Diagram:    http://creately.com/diagram/example/irynkat31
 * Views and Actions Workflows: http://creately.com/diagram/example/iryu0ksu1
 * Class Diagram:               http://creately.com/diagram/example/is0nnb3m1
+* Activities - link & break:   http://creately.com/diagram/example/is4v3r2k1
 
 Design and Screens:
 * Prototype in PowerPoint Online: https://1drv.ms/p/s!AiHH37rUQbodiv4YeQ0sLdIgsKt2MA
