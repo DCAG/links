@@ -10,6 +10,8 @@ Design and Screens:
 * Prototype in PowerPoint Online: https://1drv.ms/p/s!AiHH37rUQbodiv4YeQ0sLdIgsKt2MA
 * InvisionApp:
 
+-------------------------------------------------------------------------------------
+
 IDE:
 * JetBrains PhpStorm2016.2 via Student license (https://www.jetbrains.com/phpstorm/)
 
