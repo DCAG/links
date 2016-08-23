@@ -9,7 +9,7 @@
 namespace links\model;
 
 
-class Snippet extends resource
+class Snippet extends Resource
 {
     /*
      * Snippet properties:

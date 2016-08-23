@@ -9,7 +9,7 @@
 namespace links\model;
 
 
-class resource
+class Resource
 {
     public $id;
     /**

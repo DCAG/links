@@ -11,7 +11,7 @@ namespace links\controller;
 
 use links\model\Snippet;
 
-class Nexus
+class Nexus extends Resource
 {
     /**
      * @var $links
