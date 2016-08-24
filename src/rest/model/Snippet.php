@@ -9,7 +9,7 @@
 namespace links\model;
 
 
-class Snippet extends Resource
+class Snippet extends LinksResource
 {
     /*
      * Snippet properties:
@@ -24,7 +24,7 @@ class Snippet extends Resource
      * @var $referenceId
      * the data property value which the provider references to when updating from its corresponding data source.
      */
-    public $referenceId;
+    //public $referenceId;
     /**
      * @var $data object
      * snippet data collected from the provider.
@@ -36,11 +36,18 @@ class Snippet extends Resource
      * contains the id of the nexus object that this snippet is linked to. Left empty if not linked to any nexus.
      */
     public $linkedTo;
-    public $linkedToAtIndex;
 
     /*
      * Snippet functions:
      */
+    /**
+     * @inheritDoc
+     */
+    public function __construct()
+    {
+
+    }
+
 
     public function linkToExistingNexus(Nexus $nexus){
         if(empty($linkedTo) && isset($nexus))

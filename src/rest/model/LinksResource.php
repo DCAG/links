@@ -9,7 +9,7 @@
 namespace links\model;
 
 
-class Resource
+class LinksResource
 {
     public $id;
     /**
@@ -17,20 +17,10 @@ class Resource
      */
     public $displayName;
     /**
-     * @var $description
-     */
-    public $description;
-    /**
      * @var $memberOf
      * contains an array of ids of resourceGroups that this snippet is member of.
      */
     public $memberOf;
-    /**
-     * @var $extensions
-     * key-value pairs of additional data.
-     * designed initially to be used by users.
-     */
-    public $extensions;
     /**
      * @var $lastUpdated
      * last updated by the provider.
@@ -39,11 +29,14 @@ class Resource
     /**
      * @var
      */
-    public $creationTime;
+    public $modifiedBy;
     /**
      * @var
      */
-    public $modifiedBy;
-
-
+    public $creationTime;
+    /**
+     * @var $createdBy
+     * created by a provider or a user
+     */
+    public $createdBy;
 }
