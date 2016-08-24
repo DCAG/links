@@ -13,7 +13,7 @@ $pvdADComps->arguments = 'src\executor\engine\Providers\ADComputers\Get-linksADC
 $pvdADComps->name = "DSCLabDomainComputers";
 
 
-$path = 'C:\Users\digic\Documents\GitHub\links\src\executor\engine\Providers\ADComputers\ADComputersJSON.json';
+$path = 'src\executor\engine\Providers\ADComputers\ADComputersJSON.json';
 $path=str_replace("\\","/",$path);
 //echo $path;
 echo "\n";

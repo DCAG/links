@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb765921-1b34-4888-954a-e5f21f903345" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/executor/engine/Providers/ADComputers/Get-linksADComputers.ps1" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/rest/model/Resource.php" afterPath="$PROJECT_DIR$/src/rest/model/LinksResource.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/executor/engine/Provider.php" afterPath="$PROJECT_DIR$/src/executor/engine/Provider.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/executor/engine/filetest.php" afterPath="$PROJECT_DIR$/src/executor/engine/filetest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rest/model/Nexus.php" afterPath="$PROJECT_DIR$/src/rest/model/Nexus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rest/model/Snippet.php" afterPath="$PROJECT_DIR$/src/rest/model/Snippet.php" />
     </list>
     <ignored path="links.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Provider.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Provider.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/executor/engine/Provider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+            <state relative-caret-position="252">
+              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -86,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="filetest.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="filetest.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/executor/engine/filetest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
               </folding>
@@ -167,10 +162,10 @@
         <option value="$PROJECT_DIR$/src/rest/model/LinksPlatformException.php" />
         <option value="$PROJECT_DIR$/src/rest/model/resource.php" />
         <option value="$PROJECT_DIR$/src/rest/model/Resource.php" />
-        <option value="$PROJECT_DIR$/src/executor/engine/filetest.php" />
         <option value="$PROJECT_DIR$/src/rest/model/Snippet.php" />
         <option value="$PROJECT_DIR$/src/rest/model/Nexus.php" />
         <option value="$PROJECT_DIR$/src/executor/engine/Provider.php" />
+        <option value="$PROJECT_DIR$/src/executor/engine/filetest.php" />
       </list>
     </option>
   </component>
@@ -464,12 +459,12 @@
       <workItem from="1471242811081" duration="7181000" />
       <workItem from="1471280117716" duration="4597000" />
       <workItem from="1472023922722" duration="7100000" />
-      <workItem from="1472055636151" duration="9936000" />
+      <workItem from="1472055636151" duration="10104000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65290000" />
+    <option name="totallyTimeSpent" value="65458000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -899,21 +894,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/executor/engine/filetest.php">
+    <entry file="file://$PROJECT_DIR$/src/executor/engine/Provider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="252">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/executor/engine/Provider.php">
+    <entry file="file://$PROJECT_DIR$/src/executor/engine/filetest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="255">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
