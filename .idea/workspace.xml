@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb765921-1b34-4888-954a-e5f21f903345" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/rest/model/resource.php" afterPath="$PROJECT_DIR$/src/rest/model/Resource.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rest/model/Nexus.php" afterPath="$PROJECT_DIR$/src/rest/model/Nexus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rest/model/Snippet.php" afterPath="$PROJECT_DIR$/src/rest/model/Snippet.php" />
     </list>
     <ignored path="links.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -444,12 +441,12 @@
       <workItem from="1470918867659" duration="21845000" />
       <workItem from="1471201312691" duration="2135000" />
       <workItem from="1471242811081" duration="7181000" />
-      <workItem from="1471280117716" duration="3887000" />
+      <workItem from="1471280117716" duration="4597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47544000" />
+    <option name="totallyTimeSpent" value="48254000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -461,7 +458,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24507658" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
