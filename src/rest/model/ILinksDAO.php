@@ -12,8 +12,5 @@ namespace links\model;
 interface ILinksDAO
 {
     static function getInstance();
-    function getUserDAO();
-    function getSnippetDAO();
-    function getNexusDAO();
-    function getResourceGroupDAO();
+    function getDAO($vo_class);
 }

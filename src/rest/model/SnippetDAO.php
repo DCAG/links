@@ -11,5 +11,7 @@ namespace links\model;
 
 class SnippetDAO
 {
+    public instance;
 
+    save
 }

@@ -10,6 +10,7 @@ namespace links\executor\engine;
 
 
 use links\model\Snippet;
+use links\model\SnippetDAO;
 
 class Provider
 {
@@ -39,7 +40,12 @@ class Provider
             $snip->createdBy = "provider";
             $snip->provider = $this->name;//how snippet is saved to DB? need to create ref?
             $snip->creationTime = Ev::now();
-            $snip->displayName = $obj->/*{selected property in config file}*/ //may want to specify 2 properties - key (to look by) and display name(more easy to look at then GUI for example)
+            //$snip->displayName = $obj->/*{selected property in config file}*/ //may want to specify 2 properties - key (to look by) and display name(more easy to look at then GUI for example)
+            $snip->modifiedBy="";
+            $snip->lastUpdated=$snip->creationTime;
+            $snip->memberOf=null;
+            $snip->linkedTo=null;
+            SnippetDAO::getInstance()->
         }
 
 
