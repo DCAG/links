@@ -45,7 +45,7 @@ class Provider
             $snip->lastUpdated=$snip->creationTime;
             $snip->memberOf=null;
             $snip->linkedTo=null;
-            SnippetDAO::getInstance()->
+            MongoDBLinksDAO::getInstance(LinksModelEnum::);
         }
 
 

@@ -29,8 +29,9 @@ class MongoDBLinksDAO implements ILinksDAO
      *
      * @return Singleton The *Singleton* instance.
      */
-    public static function getInstance()
+    public static function getInstance($linksModelEntity)
     {
+
         if (null === static::$instance) {
             //load the address port and dbs from a file or a DIC - but what about the DIC in the rest slim framework???
             static::$instance = new static();
