@@ -29,7 +29,7 @@ class MongoDBLinksDAO implements ILinksDAO
      *
      * @return Singleton The *Singleton* instance.
      */
-    public static function getInstance($linksModelEntity)
+    public static function getInstance()
     {
 
         if (null === static::$instance) {
@@ -100,5 +100,12 @@ class MongoDBLinksDAO implements ILinksDAO
     {
         if(!isset($this->ResourceGroupDAO))
         $this->resourceGroupDAO = new ResourceGroupDAO($this);
+    }
+
+    /** @var $vo_class int */
+    function getDAO($vo_class)
+    {
+
+
     }
 }
