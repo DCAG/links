@@ -9,9 +9,26 @@
 namespace links\model;
 
 
-class SnippetDAO
+class SnippetDAO implements ILinksEntityDAO
 {
-    public instance;
 
-    save
+    static function getInstance()
+    {
+        // TODO: Implement getInstance() method.
+    }
+
+    function findById($id)
+    {
+        // TODO: Implement findById() method.
+    }
+
+    function save($entity)
+    {
+        // TODO: Implement save() method.
+    }
+
+    function remove($entity)
+    {
+        // TODO: Implement remove() method.
+    }
 }

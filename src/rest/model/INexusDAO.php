@@ -9,7 +9,7 @@
 namespace links\model;
 
 
-interface INexusDAO
+interface INexusDAO extends ILinksEntityDAO
 {
 
 }

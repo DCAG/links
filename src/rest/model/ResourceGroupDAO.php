@@ -9,7 +9,26 @@
 namespace links\model;
 
 
-class ResourceGroupDAO
+class ResourceGroupDAO extends BaseLinksDAO implements IResourceGroupDAO
 {
 
+    static function getInstance()
+    {
+        // TODO: Implement getInstance() method.
+    }
+
+    function findById($id)
+    {
+        // TODO: Implement findById() method.
+    }
+
+    function save($entity)
+    {
+        // TODO: Implement save() method.
+    }
+
+    function remove($entity)
+    {
+        // TODO: Implement remove() method.
+    }
 }

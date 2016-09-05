@@ -12,20 +12,32 @@ namespace links\model;
 class UserDAO implements IUserDAO
 {
 
+    static function getInstance()
+    {
+        // TODO: Implement getInstance() method.
+    }
+
+    function findById($id)
+    {
+        // TODO: Implement findById() method.
+    }
+
+    function save($entity)
+    {
+        // TODO: Implement save() method.
+    }
+
+    function remove($entity)
+    {
+        // TODO: Implement remove() method.
+    }
+
     /**
      * @inheritDoc
      */
     function create(User $user)
     {
         // TODO: Implement create() method.
-    }
-
-    /**
-     * @inheritDoc
-     */
-    function findById($id)
-    {
-        // TODO: Implement findById() method.
     }
 
     /**
@@ -51,5 +63,4 @@ class UserDAO implements IUserDAO
     {
         // TODO: Implement delete() method.
     }
-
 }

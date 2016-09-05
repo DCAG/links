@@ -9,35 +9,35 @@
 namespace links\model;
 
 
-interface IUserDAO
+interface IUserDAO extends ILinksEntityDAO
 {
     /**
      * @param $user
      * Store the new user and assign a unique auto-generated ID.
      */
-    function create(User $user);
+    //function create(User $user);
 
     /**
      * @param $id
      * Return the user with the given auto-generated ID.
      */
-    function findById($id);
+    //function findById($id);
 
     /**
      * @param $login
      * Return the user with the given login ID.
      */
-    function findByLogin($login);
+    //function findByLogin($login);
 
     /**
      * @param $user
      * Update the user's fields.
      */
-    function update($user);
+    //function update($user);
 
     /**
      * @param $user
      * Delete the user from the database.
      */
-    function delete($user);
+    //function delete($user);
 }

@@ -9,8 +9,9 @@
 namespace links\model;
 
 
-interface ILinksDAO
+interface ILinksDAOFactory
 {
     static function getInstance();
+
     function getDAO($vo_class);
 }

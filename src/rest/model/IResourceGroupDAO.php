@@ -9,7 +9,7 @@
 namespace links\model;
 
 
-interface IResourceGroupDAO
+interface IResourceGroupDAO extends ILinksEntityDAO
 {
 
 }

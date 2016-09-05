@@ -9,20 +9,12 @@
 namespace links\model;
 
 
-class MongoDBLinksDAO implements ILinksDAO
+class MongoDBLinksDAO implements ILinksDAOFactory
 {
     /**
      * @var Singleton The reference to *Singleton* instance of this class
      */
     private static $instance;
-    public $address;
-    public $port;
-    public $db;
-
-    private static $userDAO;
-    private static $snippetDAO;
-    private static $nexusDAO;
-    private static $resourceGroupDAO;
 
     /**
      * Returns the *Singleton* instance of this class.
@@ -57,27 +49,7 @@ class MongoDBLinksDAO implements ILinksDAO
 
         }
     }
-
-    /**
-     * Private clone method to prevent cloning of the instance of the
-     * *Singleton* instance.
-     *
-     * @return void
-     */
-    private function __clone()
-    {
-    }
-
-    /**
-     * Private unserialize method to prevent unserializing of the *Singleton*
-     * instance.
-     *
-     * @return void
-     */
-    private function __wakeup()
-    {
-    }
-
+/*
     function getUserDAO()
     {
         if(!isset($this->userDAO))
@@ -101,11 +73,26 @@ class MongoDBLinksDAO implements ILinksDAO
         if(!isset($this->ResourceGroupDAO))
         $this->resourceGroupDAO = new ResourceGroupDAO($this);
     }
-
+*/
     /** @var $vo_class int */
     function getDAO($vo_class)
     {
-
-
+        switch ($vo_class){
+            case LinksModelEnum::User:
+                return UserDAO::getInstance();
+                break;
+            case LinksModelEnum::Nexus:
+                return NexusDAO::getInstance();
+                break;
+            case LinksModelEnum::Snippet:
+                return SnippetDAO::getInstance();
+                break;
+            case LinksModelEnum::ResourceGroup:
+                return ResourceGroupDAO::getInstance();
+                break;
+            default:
+                return null;
+                break;
+        }
     }
 }
