@@ -9,8 +9,9 @@
 namespace links\model;
 
 
-class NexusDAO implements ILinksEntityDAO
+class NexusDAO extends BaseLinksDAO implements INexusDAO
 {
+    private static $instance;
 
     static function getInstance()
     {

@@ -9,7 +9,7 @@
 namespace links\model;
 
 
-class SnippetDAO implements ILinksEntityDAO
+class SnippetDAO extends BaseLinksDAO implements ISnippetDAO
 {
 
     static function getInstance()

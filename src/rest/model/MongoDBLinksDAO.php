@@ -49,31 +49,27 @@ class MongoDBLinksDAO implements ILinksDAOFactory
 
         }
     }
-/*
-    function getUserDAO()
+
+    /**
+     * Private clone method to prevent cloning of the instance of the
+     * *Singleton* instance.
+     *
+     * @return void
+     */
+    private function __clone()
     {
-        if(!isset($this->userDAO))
-            $this->userDAO = new UserDAO($this);
     }
 
-    function getSnippetDAO()
+    /**
+     * Private unserialize method to prevent unserializing of the *Singleton*
+     * instance.
+     *
+     * @return void
+     */
+    private function __wakeup()
     {
-        if(!isset($this->snippetDAO))
-        $this->snippetDAO = new SnippetDAO($this);
     }
 
-    function getNexusDAO()
-    {
-        if(!isset($this->nexusDAO))
-        $this->nexusDAO = new NexusDAO($this);
-    }
-
-    function getResourceGroupDAO()
-    {
-        if(!isset($this->ResourceGroupDAO))
-        $this->resourceGroupDAO = new ResourceGroupDAO($this);
-    }
-*/
     /** @var $vo_class int */
     function getDAO($vo_class)
     {

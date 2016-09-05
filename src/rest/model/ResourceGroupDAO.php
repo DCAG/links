@@ -12,6 +12,8 @@ namespace links\model;
 class ResourceGroupDAO extends BaseLinksDAO implements IResourceGroupDAO
 {
 
+    private static $instance;
+
     static function getInstance()
     {
         // TODO: Implement getInstance() method.
