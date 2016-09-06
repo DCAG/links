@@ -43,6 +43,9 @@ class MongoDBLinksDAO implements ILinksDAOFactory
             throw new LinksPlatformException("Invalid operation. Instance already exists.");
         }
         try{
+            BaseLinksDAO::$address = "127.0.0.1";
+            BaseLinksDAO::$port = 80;
+            BaseLinksDAO::$db = "linksTest";
             //create session factory
         }
         catch(\Exception $ex){
