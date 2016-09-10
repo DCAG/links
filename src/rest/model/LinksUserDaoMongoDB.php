@@ -18,4 +18,19 @@ class LinksUserDaoMongoDB implements ILinksUserDao
     public function __construct()
     {
     }
+
+    function findById($id)
+    {
+        // TODO: Implement findById() method.
+    }
+
+    function save($entity)
+    {
+        // TODO: Implement save() method.
+    }
+
+    function remove($entity)
+    {
+        // TODO: Implement remove() method.
+    }
 }

@@ -12,9 +12,11 @@ namespace links\model;
 class LinksDaoFactory
 {
     private static $_instance;
+    private static $MongoConnection;
 
     public function __construct()
     {
+        $MongoConnection = new MongoDB\Client("mongodb://127.0.0.1:27017");
     }
 
     /**

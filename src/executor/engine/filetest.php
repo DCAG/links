@@ -6,6 +6,11 @@
  * Time: 10:29
  */
 
+
+var_dump(phpversion("mongodb"));
+
+/*
+
 $pvdADComps = new \links\executor\engine\Provider();
 $pvdADComps->workingDirectory = '.';
 $pvdADComps->executable = 'powershell.exe';
@@ -25,3 +30,4 @@ $data = fread($myfile,filesize($path));
 //echo shell_exec("mongoimport.exe");
 echo shell_exec("powershell -file  | mongoimport.exe --db test --collection adcomp --type json --jsonArray 2>&1");
 fclose($myfile);
+*/
