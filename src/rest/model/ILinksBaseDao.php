@@ -8,7 +8,6 @@
 
 namespace links\model;
 
-
 interface ILinksBaseDao
 {
     //

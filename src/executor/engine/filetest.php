@@ -6,8 +6,14 @@
  * Time: 10:29
  */
 
+require __DIR__ . '/../../vendor/autoload.php'; // include Composer goodies
 
 var_dump(phpversion("mongodb"));
+
+$nexcol = (new MongoDB\Client("mongodb://127.0.0.1:27017"))->links->nexus;
+
+$nexcol->insertOne([ 'name' => 'Hinterland', 'brewery' => 'BrewDog' ]);
+
 
 /*
 

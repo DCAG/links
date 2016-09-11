@@ -14,7 +14,7 @@ use links\model\Snippet;
 class Nexus extends LinksResource
 {
     /**
-     * @var $links
+     * @var $links array
      * the links to the snippets that created assemble this nexus
      */
     public $links; //members

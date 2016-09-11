@@ -7,16 +7,18 @@
  */
 
 namespace links\model;
+require __DIR__ . '/../../vendor/autoload.php'; // include Composer goodies
+use \MongoDB;
 
 //http://codeutopia.net/blog/2009/01/05/decoupling-models-from-the-database-data-access-object-pattern-in-php/
 class LinksDaoFactory
 {
     private static $_instance;
-    private static $MongoConnection;
+    private static $db;
 
     public function __construct()
     {
-        $MongoConnection = new MongoDB\Client("mongodb://127.0.0.1:27017");
+        self::$db = (new MongoDB\Client("mongodb://127.0.0.1:27017"))->links;
     }
 
     /**
@@ -46,7 +48,7 @@ class LinksDaoFactory
      */
     public function getNexusDao()
     {
-        return new LinksNexusDaoMongoDB();
+        return new LinksNexusDaoMongoDB(self::$db);
     }
 
     /**
@@ -55,7 +57,7 @@ class LinksDaoFactory
      */
     public function getSnippetDao()
     {
-        return new LinksSnippetDaoMongoDB();
+        return new LinksSnippetDaoMongoDB(self::$db);
     }
 
     /**
@@ -64,7 +66,7 @@ class LinksDaoFactory
      */
     public function getResourceGroupDao()
     {
-        return new LinksResourceGroupDaoMongoDB();
+        return new LinksResourceGroupDaoMongoDB(self::$db);
     }
 
     /**
@@ -73,6 +75,6 @@ class LinksDaoFactory
      */
     public function getUserDao()
     {
-        return new LinksUserDaoMongoDB();
+        return new LinksUserDaoMongoDB(self::$db);
     }
 }

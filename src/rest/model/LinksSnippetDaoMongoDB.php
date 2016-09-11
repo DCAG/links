@@ -7,31 +7,34 @@
  */
 
 namespace links\model;
-
+require __DIR__ . '/../../vendor/autoload.php'; // include Composer goodies
+use \MongoDB;
 
 class LinksSnippetDaoMongoDB implements ILinksSnippetDao
 {
-    private $collection;
+    /** @var MongoDB\Collection */
+    private $col;
     /**
      * LinksSnippetDaoMongoDB constructor.
+     * @param $db MongoDB\Database
      */
     public function __construct($db)
     {
-        $collection = $db->snippet;
+        $this->col = $db->snippet;
     }
 
     function findById($id)
     {
-        // TODO: Implement findById() method.
+        $this->col->findOne(array('_id' => new MongoId($id)));
     }
 
     function save($entity)
     {
-        // TODO: Implement save() method.
+        $this->col->save($entity);
     }
 
     function remove($entity)
     {
-        // TODO: Implement remove() method.
+        $this->col->deleteOne($entity);
     }
 }

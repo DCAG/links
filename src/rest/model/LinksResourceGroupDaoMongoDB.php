@@ -7,30 +7,34 @@
  */
 
 namespace links\model;
-
+require __DIR__ . '/../../vendor/autoload.php'; // include Composer goodies
+use \MongoDB;
 
 class LinksResourceGroupDaoMongoDB implements ILinksResourceGroupDao
 {
-
+    /** @var MongoDB\Collection */
+    private $col;
     /**
      * LinksResourceGroupDaoMongoDB constructor.
+     * @param $db MongoDB\Database
      */
-    public function __construct()
+    public function __construct($db)
     {
+        $this->col = $db->nexus;
     }
 
     function findById($id)
     {
-        // TODO: Implement findById() method.
+        $this->col->findOne(array('_id' => new MongoId($id)));
     }
 
     function save($entity)
     {
-        // TODO: Implement save() method.
+        $this->col->save($entity);
     }
 
     function remove($entity)
     {
-        // TODO: Implement remove() method.
+        $this->col->deleteOne($entity);
     }
 }
